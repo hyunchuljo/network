@@ -1,0 +1,130 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFALGS	Makefile	/^CFALGS = -W -Wall -g -O0$/;"	m
+CLIENT_OBJECTS	Makefile	/^CLIENT_OBJECTS = peer.o queue.o stdin.o client.o msg.o debug.o option.o main2.o$/;"	m
+DEBUG_DUMP_PACKET	debug.c	6;"	d	file:
+MAGIC_NUM	common.h	28;"	d
+MAX_CLIENTS	common.h	9;"	d
+MAX_DATA_SIZE	common.h	34;"	d
+MAX_QUEUE_SIZE	common.h	12;"	d
+MAX_TEXT_SIZE	common.h	50;"	d
+MSG_TYPE_1	common.h	/^	MSG_TYPE_1,$/;"	e	enum:__anon3
+MSG_TYPE_2	common.h	/^	MSG_TYPE_2,$/;"	e	enum:__anon3
+MSG_TYPE_3	common.h	/^	MSG_TYPE_3,$/;"	e	enum:__anon3
+MSG_TYPE_MAX	common.h	/^	MSG_TYPE_MAX,$/;"	e	enum:__anon3
+MSG_TYPE_UNKNOWN	common.h	/^	MSG_TYPE_UNKNOWN,$/;"	e	enum:__anon3
+NO_SOCKET	common.h	66;"	d
+SERVER_IPV4_ADDR	common.h	15;"	d
+TARGET	Makefile	/^TARGET = client$/;"	m
+_COMMON_H_	common.h	2;"	d
+a	common.h	/^	int a;$/;"	m	struct:__anon5
+a	common.h	/^	int a;$/;"	m	struct:__anon6
+add_to_new_connection	server.c	/^static int add_to_new_connection(int new_client_sock, struct sockaddr_in *client_addr)$/;"	f	file:
+addres	common.h	/^	struct sockaddr_in addres;$/;"	m	struct:__anon9	typeref:struct:__anon9::sockaddr_in
+b	common.h	/^	int b;$/;"	m	struct:__anon5
+b	common.h	/^	int b;$/;"	m	struct:__anon6
+build_fd_sets	server.c	/^static int build_fd_sets(fd_set *read_fds, fd_set *write_fds, fd_set *except_fds)$/;"	f	file:
+build_fd_sets_for_client	client.c	/^static int build_fd_sets_for_client(peer_t *client, fd_set *read_fds, fd_set *write_fds, fd_set *except_fds)$/;"	f	file:
+c	common.h	/^	int c;$/;"	m	struct:__anon6
+clear_rx_retry_cnt	peer.c	/^int clear_rx_retry_cnt(peer_t *peer)$/;"	f
+clear_seq_id	peer.c	/^int clear_seq_id(peer_t *peer)$/;"	f
+client	main2.c	/^peer_t client;$/;"	v
+client_msg_handler	msg.c	/^static client_msg_handler_t client_msg_handler[MSG_TYPE_MAX] = {$/;"	v	file:
+client_msg_handler_t	msg.c	/^} client_msg_handler_t;$/;"	t	typeref:struct:__anon2	file:
+client_process_data1	msg.c	/^static int client_process_data1(peer_t *peer)$/;"	f	file:
+client_process_data2	msg.c	/^static int client_process_data2(peer_t *peer)$/;"	f	file:
+client_process_data3	msg.c	/^static int client_process_data3(peer_t *peer)$/;"	f	file:
+client_send_msg	msg.c	/^static int client_send_msg(peer_t *peer, msg_type_t type, int data_len, void *data)$/;"	f	file:
+clients	main.c	/^peer_t clients[MAX_CLIENTS];	\/* used for clients *\/$/;"	v
+close_client_connection	server.c	/^static int close_client_connection(peer_t *client)$/;"	f	file:
+connect_server	client.c	/^static int connect_server(peer_t *client, char *server_ip, int server_port)$/;"	f	file:
+convert_hton_common_data	msg.c	/^void convert_hton_common_data(peer_t *peer)$/;"	f
+convert_hton_data1	msg.c	/^static void convert_hton_data1(peer_t *peer)$/;"	f	file:
+convert_hton_data2	msg.c	/^static void convert_hton_data2(peer_t *peer)$/;"	f	file:
+convert_hton_each_data_type	msg.c	/^void convert_hton_each_data_type(peer_t *peer)$/;"	f
+convert_hton_func	msg.c	/^	void (*convert_hton_func) (peer_t *peer);$/;"	m	struct:__anon2	file:
+convert_ntoh_data1	msg.c	/^static void convert_ntoh_data1(peer_t *peer)$/;"	f	file:
+convert_ntoh_data2	msg.c	/^static void convert_ntoh_data2(peer_t *peer)$/;"	f	file:
+convert_ntoh_func	msg.c	/^ 	void (*convert_ntoh_func) (peer_t *peer);$/;"	m	struct:__anon1	file:
+convert_ntoh_message_common	msg.c	/^static void convert_ntoh_message_common(peer_t *peer)$/;"	f	file:
+convert_ntoh_message_each_type	msg.c	/^static void convert_ntoh_message_each_type(peer_t *peer)$/;"	f	file:
+create_peer	peer.c	/^int create_peer(peer_t *peer)$/;"	f
+current	common.h	/^	int current;$/;"	m	struct:__anon8
+data	common.h	/^	char data[MAX_DATA_SIZE];$/;"	m	struct:__anon4
+data	common.h	/^	message_t *data;$/;"	m	struct:__anon8
+data1_t	common.h	/^} data1_t;$/;"	t	typeref:struct:__anon5
+data2_t	common.h	/^} data2_t;$/;"	t	typeref:struct:__anon6
+data3_t	common.h	/^} data3_t;$/;"	t	typeref:struct:__anon7
+delete_peer	peer.c	/^int delete_peer(peer_t *peer)$/;"	f
+disconnect_peer	peer.c	/^void disconnect_peer(peer_t *peer)$/;"	f
+do_client	client.c	/^int do_client(peer_t *client, char *server_ip, int server_port)$/;"	f
+do_client_ex	client.c	/^static int do_client_ex(peer_t *client, fd_set *read_fds, fd_set *write_fds, fd_set *except_fds, int max_fds)$/;"	f	file:
+do_server	server.c	/^int do_server()$/;"	f
+do_server_ex	server.c	/^static int do_server_ex(fd_set *read_fds, fd_set *write_fds, fd_set *except_fds, int max_fds)$/;"	f	file:
+dump_packet	debug.c	/^void dump_packet(char *tx_rx, char *p, int start, int len)$/;"	f
+fifo	common.h	/^	message_queue_t fifo;$/;"	m	struct:__anon9
+g_peer	main.c	/^peer_t *g_peer = &server;$/;"	v
+g_peer	main2.c	/^peer_t *g_peer = &client;$/;"	v
+get_client_name	server.c	/^int get_client_name(int argc, char **argv, char *client_name)$/;"	f
+get_max_fds	server.c	/^static int get_max_fds()$/;"	f	file:
+get_qna_state	peer.c	/^int get_qna_state(peer_t *peer)$/;"	f
+handle_client_message	msg.c	/^int handle_client_message(peer_t *peer)$/;"	f
+handle_new_connection	server.c	/^static int handle_new_connection()$/;"	f	file:
+handle_read_from_stdin	stdin.c	/^int handle_read_from_stdin()$/;"	f
+handle_server_message	msg.c	/^int handle_server_message(peer_t *peer)$/;"	f
+inc_seq_id	peer.c	/^int inc_seq_id(peer_t *peer)$/;"	f
+inc_trans_id	peer.c	/^int inc_trans_id(peer_t *peer)$/;"	f
+is_client_invalid_packet	msg.c	/^static int is_client_invalid_packet(peer_t *peer)$/;"	f	file:
+is_server_invalid_packet	msg.c	/^static int is_server_invalid_packet(peer_t *peer)$/;"	f	file:
+magic	common.h	/^	int magic;	\/* for endian check *\/$/;"	m	struct:__anon4
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+main	main2.c	/^int main(int argc, char **argv)$/;"	f
+message_queue_t	common.h	/^} message_queue_t;$/;"	t	typeref:struct:__anon8
+message_t	common.h	/^} message_t;$/;"	t	typeref:struct:__anon4
+msg_len	common.h	/^	int msg_len;	\/* data length, ex) msg1_t = 8 *\/$/;"	m	struct:__anon4
+msg_type	common.h	/^	msg_type_t msg_type;$/;"	m	struct:__anon4
+msg_type_t	common.h	/^} msg_type_t;$/;"	t	typeref:enum:__anon3
+peer_add_to_send	peer.c	/^int peer_add_to_send(peer_t *peer)$/;"	f
+peer_get_addres_str	peer.c	/^char *peer_get_addres_str(peer_t *peer)$/;"	f
+peer_t	common.h	/^} peer_t;$/;"	t	typeref:struct:__anon9
+prepare_common_data	msg.c	/^static void prepare_common_data(peer_t *peer, message_t *msg, msg_type_t type, int msg_len)$/;"	f	file:
+print_message_common	msg.c	/^static void print_message_common(peer_t *peer)$/;"	f	file:
+process_client_message_each_type	msg.c	/^static void process_client_message_each_type(peer_t *peer)$/;"	f	file:
+process_data1	msg.c	/^static int process_data1(peer_t *peer)$/;"	f	file:
+process_data2	msg.c	/^static int process_data2(peer_t *peer)$/;"	f	file:
+process_data3	msg.c	/^static int process_data3(peer_t *peer)$/;"	f	file:
+process_func	msg.c	/^	int (*process_func) (peer_t *peer);$/;"	m	struct:__anon1	file:
+process_func	msg.c	/^ 	int (*process_func) (peer_t *peer);$/;"	m	struct:__anon2	file:
+process_message_each_type	msg.c	/^static int process_message_each_type(peer_t *peer)$/;"	f	file:
+qna_state	common.h	/^	int qna_state;	\/* 0=possible to request, 1=wait for answer *\/$/;"	m	struct:__anon9
+read_from_stdin	stdin.c	/^int read_from_stdin(char *read_buffer, size_t max_len)$/;"	f
+receive_from_peer	peer.c	/^int receive_from_peer(peer_t *peer, int (*message_handler)(peer_t *))$/;"	f
+rx_buff	common.h	/^	message_t rx_buff;$/;"	m	struct:__anon9
+rx_bytes	common.h	/^	int rx_bytes;$/;"	m	struct:__anon9
+rx_retry_cnt	common.h	/^	int rx_retry_cnt;	\/* retry counter for rx *\/$/;"	m	struct:__anon9
+send_data1	msg.c	/^int send_data1(peer_t *peer, int a, int b)$/;"	f
+send_data2	msg.c	/^int send_data2(peer_t *peer, int a, int b, int c)$/;"	f
+send_data3	msg.c	/^int send_data3(peer_t *peer, char *text)$/;"	f
+send_random_data	client.c	/^static int send_random_data(peer_t *client)$/;"	f	file:
+send_to_peer	peer.c	/^int send_to_peer(peer_t *peer)$/;"	f
+seq_id	common.h	/^	int seq_id;$/;"	m	struct:__anon4
+seq_id	common.h	/^	int seq_id;$/;"	m	struct:__anon9
+server	main.c	/^peer_t server; 			\/* used for server *\/$/;"	v
+server_msg_handler	msg.c	/^static server_msg_handler_t server_msg_handler[MSG_TYPE_MAX] = {$/;"	v	file:
+server_msg_handler_t	msg.c	/^} server_msg_handler_t;$/;"	t	typeref:struct:__anon1	file:
+set_qna_state	peer.c	/^void set_qna_state(peer_t *peer, int state)$/;"	f
+shutdown_properly	peer.c	/^void shutdown_properly(int code)$/;"	f
+size	common.h	/^	int size;$/;"	m	struct:__anon8
+socket	common.h	/^	int socket;	\/* -1: not connected *\/$/;"	m	struct:__anon9
+start_listen_socket	server.c	/^int start_listen_socket(int port, int *listen_sock)$/;"	f
+text	common.h	/^	char text[MAX_TEXT_SIZE];$/;"	m	struct:__anon7
+trans_id	common.h	/^	int trans_id;$/;"	m	struct:__anon4
+trans_id	common.h	/^	int trans_id;$/;"	m	struct:__anon9
+tx_buff	common.h	/^	message_t tx_buff;$/;"	m	struct:__anon9
+tx_bytes	common.h	/^	int tx_bytes;$/;"	m	struct:__anon9
+tx_retry_cnt	common.h	/^	int tx_retry_cnt;	\/* retry counter for tx *\/$/;"	m	struct:__anon9
